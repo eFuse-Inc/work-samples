@@ -1,6 +1,8 @@
-Title: eFuse Feed Work Sample
-Date: 2021-12-03
-Author: eFuse
+**Title:** eFuse Feed Work Sample
+
+**Date:** 2021-12-03
+
+**Author:** eFuse
 
 ## Project Background
 This document describes the requirements for the eFuse front end work sample. Applicants will be implementing a single page that hosts a feed similar to the one on eFuse. The submitted sample will be used to evaluate an applicant’s ability to interpret project requirements and implement a production ready solution based on a requirements document similar to that used internally to eFuse. Engineers should use this sample as a showcase of their talent and implement a solution that is as ready for production as possible.
