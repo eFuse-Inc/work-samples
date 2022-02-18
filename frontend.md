@@ -5,23 +5,23 @@
 **Author:** eFuse
 
 ## Project Background
-This document describes the requirements for the eFuse front end work sample. Applicants will be implementing a single page that hosts a feed similar to the one on eFuse. The submitted sample will be used to evaluate an applicant’s ability to interpret project requirements and implement a production ready solution based on a requirements document similar to that used internally to eFuse. Engineers should use this sample as a showcase of their talent and implement a solution that is as ready for production as possible.
+This document describes the requirements for the eFuse front end work sample. Applicants will be implementing a single page that hosts a feed similar to the one on eFuse. The submitted sample will be used to evaluate an applicant’s ability to interpret project requirements and implement a production-ready solution based on a requirements document similar to that used internally to eFuse. Engineers should use this sample as a showcase of their talent and implement a solution that is as ready for production as possible.
 
 ## Objective
-The objective is to implement a functioning feed similar to that of the eFuse lounge. Users should be able to create text based posts, like and comment on posts, and it should be responsive when scaling to smaller mobile devices.
+The objective is to implement a functioning feed similar to that of the eFuse lounge. Users should be able to create text-based posts, like and comment on posts, and it should be responsive when scaling to smaller mobile devices.
 
 ### Key Results
 * Do the UI components for the feed exist and match the Figma designs?
 * Can a user create a text post by clicking on “Post”?
 * Can a user like and comment on a post?
 * Does the solution use some form of state management?
-  * Local, context, redux, etc..
+  * Local, context, Redux, etc.
 * Is the webpage responsive for web and mobile views?
 * Have tests been implemented?
 * Is the webpage hosted somewhere that can be viewed publicly?
-  * Any hosting provider is fine?
+  * Any hosting provider is fine.
 * Has the code been supplied for review?
-  * Zip, Github, Gitlab, etc..
+  * Zip, GitHub, GitLab, etc.
 * Has Git been used in a meaningful way with commits for each phase to demonstrate the iterative development process?
 
 ## Business Goals
@@ -41,14 +41,14 @@ The goal of this phase is to implement the ability for a user to create a post.
 As a user, I want to be able to create a text post by typing in an input box and then pressing the “Post” button.
 
 **Engineering Recommendations:**
-* Refer to the Figma designs linked above for design specifications
-* Implement some sort of state management for post data storage
+* Refer to the Figma designs linked above for design specifications.
+* Implement some sort of state management for post data storage.
 
 **Definition of Done**
-* There exists an input field for the user to type
-* There exists a “Post” button to create a post
+* There exists an input field for the user to type.
+* There exists a “Post” button to create a post.
 * On “Post” click a new post is created below the input section.
-* The UI matches the Figma designs
+* The UI matches the Figma designs.
 
 ### Phase 2 - Comment on Post
 The goal of this phase is to add functionality so that a user can comment on a previously created post.
@@ -57,13 +57,13 @@ The goal of this phase is to add functionality so that a user can comment on a p
 As a user, I want to be able to comment on an existing post and see my comment on the post.
 
 **Engineering Recommendations:**
-* Refer to the Figma designs linked above for design specifications of comments
-* Utilize some sort of state management to store comments
+* Refer to the Figma designs linked above for design specifications of comments.
+* Utilize some sort of state management to store comments.
 
 **Definition of Done**
-* There exists an input field for the user to type comments
-* Comments are created when the user pressed the “enter” key
-* The UI matches the Figma designs
+* There exists an input field for the user to type comments.
+* Comments are created when the user pressed the “enter” key.
+* The UI matches the Figma designs.
 * Do not implement editing or deleting of comments for this work sample.
 
 ## Phase 3 - Like Posts and Comments
@@ -74,11 +74,11 @@ The goal of this phase is to add functionality so that a user can like a previou
 * As a user, I want to be able to click a button to “like” a comment and see that reflected in the UI.
 
 **Engineering Recommendations:**
-* Refer to the Figma designs linked above for design specifications of likes
-* Utilize some sort of state management to store likes
+* Refer to the Figma designs linked above for design specifications of likes.
+* Utilize some sort of state management to store likes.
 
 **Definition of Done**
-* There exists a button on posts to “like”
-* There exists a button on comments to “like”
-* A user’s like is displayed in the UI
-* The UI matches the Figma designs
+* There exists a button on posts to “like”.
+* There exists a button on comments to “like”.
+* A user’s like is displayed in the UI.
+* The UI matches the Figma designs.
