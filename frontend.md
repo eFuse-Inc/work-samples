@@ -31,6 +31,7 @@ As an eFuse employee, I want to be able to get an idea of an applicant’s engin
 Each of the phases below are laid out in a similar manner to internal eFuse PRDs. While these are guidelines for the applicant to use when building their solution, they are simply the minimum viable product for success. Applicants can feel free to improve on items listed. Figma designs have been attached below and should be used when implementing the user interface.
 
 **Figma Designs:**  https://www.figma.com/file/NgDSMM4qGcvNvufSi3wtmJ/eFuse-Work-Sample?node-id=0%3A1
+> We recommend creating a Figma account to experience our day-to-day development workflow.
 
 ### Phase 1 - Create Post
 The goal of this phase is to implement the ability for a user to create a post.
