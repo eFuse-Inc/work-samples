@@ -1,18 +1,20 @@
-**Title:** eFuse Backend Sample
+**Title:** eFuse API Work Sample
+
+**Domain:** Backend
 
 **Date:** 2021-12-03
 
 **Author:** eFuse
 
-## Project Background
+# Project Background
 
 This document describes the requirements for the eFuse backend end work sample. Applicants will be implementing a server that acts as an API for eFuse posts and users. The submitted sample will be used to evaluate an applicant’s ability to interpret project requirements and implement a production-ready solution based on a requirements document similar to that used internally to eFuse. Engineers should use this sample as a showcase of their talent and implement a solution that is as ready for production as possible.
 
-## Objective
+# Objective
 
 The objective is to implement a functioning api that could be used as the backend server to a lounge similar to that of eFuse. Engineers should be able to create text based posts, create text comments on posts, and like/unlike a post or comment. MongoDB should be used for the backing database, and Redis should be used for caching queries.
 
-### Key Results
+## Key Results
 
 - Can an engineer manage a post via REST calls?
   - Post, Put, Get, Delete
@@ -33,15 +35,15 @@ The objective is to implement a functioning api that could be used as the backen
 - (Optional) Has Docker Compose been used to deploy and run the API server?
   - Mongo, Redis, and the API should all be included.
 
-## Business Goals
+# Business Goals
 
 As an eFuse employee, I want to be able to get an idea of an applicant’s engineering capability based on this work sample to help determine if they would be a good fit for the eFuse engineering team.
 
-## Proposed Phases
+# Proposed Phases
 
 Each of the phases below are laid out in a similar manner to internal eFuse PRDs. While these are guidelines for the applicant to use when building their solution, they are simply the minimum viable product for success. Applicants can feel free to improve on items listed.
 
-### Phase 0 - Project Setup
+## Phase 0 - Project Setup
 
 The goal of this phase is to setup the environment necessary to accomplish this project.
 
@@ -62,7 +64,7 @@ The goal of this phase is to setup the environment necessary to accomplish this 
 - The service connects to an instance of Redis.
 - The entire set up/start process is documented.
 
-### Phase 1 - Create Post
+## Phase 1 - Create Post
 
 The goal of this phase is to implement the ability for an engineer to create a post via POST.
 
@@ -82,7 +84,7 @@ The goal of this phase is to implement the ability for an engineer to create a p
 - The posted object is stored in the Mongo database.
 - The response from the post includes the newly created object's ID.
 
-### Phase 2 - Manage Posts
+## Phase 2 - Manage Posts
 
 The goal of this phase is to implement the ability for an engineer to manage posts via REST calls.
 
@@ -101,7 +103,7 @@ The goal of this phase is to implement the ability for an engineer to manage pos
 - There exists a DELETE endpoint to remove a post.
   - The DELETE endpoint returns the deleted object.
 
-### Phase 3 - Create and Manage Post Comments
+## Phase 3 - Create and Manage Post Comments
 
 The goal of this phase is to implement the ability for an engineer to create and manage comments via REST calls.
 
@@ -118,7 +120,7 @@ The goal of this phase is to implement the ability for an engineer to create and
 - There exists a PUT endpoint to update a comment.
 - There exists a DELETE endpoint to remove a comment.
 
-### Phase 4 - Cache Results
+## Phase 4 - Cache Results
 
 The goal of this phase is to implement the ability to cache results from fetch queries within Redis and return when appropriate.
 
