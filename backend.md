@@ -29,7 +29,7 @@ The objective is to implement a functioning api that could be used as the backen
   - Zip, GitHub, GitLab, etc.
 - Has Git been used in a meaningful way with commits for each phase to demonstrate the iterative development process?
 - Has documentation been added to build/run the project?
-- Does the documentation identify and assumptions made during the development process?
+- Does the documentation identify any assumptions made during the development process?
 
 - (Optional) Is the api hosted somewhere that can be viewed publicly?
   - Any hosting provider is fine.
