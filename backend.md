@@ -82,7 +82,7 @@ The goal of this phase is to implement the ability for an engineer to create a p
 **Definition of Done**
 
 - There exists a POST endpoint to create a post.
-- The POST endpoint accepts a body with the following fields: `content`, `created_time`, `updated_time`, `id`, `user_id`
+- The POST endpoint accepts a body with the following fields: `content`, `created_time`, `updated_time`, `user_id`
 - The posted object is stored in the Mongo database.
 - The response from the post includes the newly created object's ID.
 
