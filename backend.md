@@ -12,7 +12,7 @@ This document describes the requirements for the eFuse backend end work sample. 
 
 # Objective
 
-The objective is to implement a functioning api that could be used as the backend server to a lounge similar to that of eFuse. Engineers should be able to create text based posts, create text comments on posts, and like/unlike a post or comment. MongoDB should be used for the backing database, and Redis should be used for caching queries.
+The objective is to implement a functioning api that could be used as the backend server to a lounge similar to that of eFuse. Engineers should be able to create text based posts and create text comments on posts. MongoDB should be used for the backing database, and Redis should be used for caching queries.
 
 ## Key Results
 
