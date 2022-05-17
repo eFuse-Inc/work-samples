@@ -16,7 +16,7 @@ The objective is to implement a functioning feed similar to that of the eFuse lo
 
 ## Key Results
 
-* Has the sample utilize React?
+* Does the sample utilize React?
 * Do the UI components for the feed exist and match the Figma designs?
 * Can a user create a text post by clicking on “Post”?
 * Can a user like and comment on a post?
