@@ -16,6 +16,7 @@ The objective is to implement a functioning feed similar to that of the eFuse lo
 
 ## Key Results
 
+* Does the work sample project's title include the applicant's name?
 * Does the sample utilize React?
 * Do the UI components for the feed exist and match the Figma designs?
 * Can a user create a text post by clicking on “Post”?
