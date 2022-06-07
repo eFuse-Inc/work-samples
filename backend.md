@@ -16,6 +16,7 @@ The objective is to implement a functioning api that could be used as the backen
 
 ## Key Results
 
+- Does the work sample project's title include the applicant's name?
 - Can an engineer manage a post via REST calls?
   - Post, Put, Get, Delete
 - Can an engineer retrieve a list of all posts via REST call?
