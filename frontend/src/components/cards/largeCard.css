@@ -1,0 +1,39 @@
+.largeCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border: 1px red solid;
+    width: 100%;
+    margin: 35px;
+}
+.topOfCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+.imgBubble {
+    border-radius: 50px;
+    margin:0 auto;
+    border: transparent;
+}
+.headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.reactionsBar {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    width: 500px;
+}
+
+.icon {
+    padding-left: 12px;
+    padding-right: 8px;
+}

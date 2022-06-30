@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "picture": "../assets/person1_unpsplash.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jessica Doe",
+    "picture": "../assets/person2_unpsplash.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Tim Jones",
+    "picture": "../assets/person3_unpsplash.jpg"
+  }
+]
