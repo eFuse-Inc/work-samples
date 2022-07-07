@@ -1,0 +1,51 @@
+.commentBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 740px;
+    height: 40px;
+    background-color: #F1F4F8;
+    color: rgba(18, 21, 29, 0.6);
+    border-radius: 100px;
+    padding: 0px 5px;
+ 
+}
+.comment {
+    color: rgba(18, 21, 29, 0.6);
+    background-color: #F1F4F8;
+    margin-right:16px;
+    margin-left: 16px;
+}
+.text {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    color: rgba(18, 21, 29, 0.6);
+    background-color: #F1F4F8;
+    width: 740px;
+    height: 40px;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    padding: 0px 5px;
+    cursor: text;
+    border: transparent;
+    border-radius: 100px;
+}
+.plus {
+    color: rgba(18, 21, 29, 0.6);
+    background-color: #F1F4F8;
+    margin-right:16px;
+    margin-left: 545px;
+}
+
+.inputComment {
+    position: absolute;
+    bottom: 138px;
+    background-color: transparent;
+    color: rgba(18, 21, 29, 0.6);
+    border-radius: 100px;
+    padding: 0px 5px;
+    align-items: center;
+    width: 740px;
+    height: 40px;
+}

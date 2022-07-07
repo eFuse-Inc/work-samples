@@ -1,0 +1,19 @@
+.reactionsBar {
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    width: 390px;
+    
+}
+
+.icon {
+    padding-left: 12px;
+    padding-right: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(18, 21, 29, 0.6);
+}

@@ -1,20 +1,16 @@
 import './App.css';
-import { LargeCard } from "./components/cards/largeCard.js"
-import { SmallCard } from "./components/cards/smallCard.js";
+import React from 'react';
+import { Cards } from './components/cards/Cards.js';
+import { InputCard } from './components/InputCard.js';
 
 function App() {
+  const postData = require("../src/mockData/getPosts.json");
+  // console.log(postData);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello World! </h1>
-      </header>
-      <div>
-        <h2> Feed </h2>
-        {/* this is the newest post -create component*/}
-        <LargeCard/>
-        {/* this is the next newest post -create component */}
-        <SmallCard/>
-      </div>
+      <InputCard />
+          <Cards postData={postData}/>
     </div>
   );
 }

@@ -1,0 +1,55 @@
+.inputCard {
+  border: 1px solid #ced7e7;
+  border-radius: 10px;
+  padding: 16px;
+  width: 800px;
+  margin-left: 320px;
+  margin-top: 38px;
+  gap: 16px;
+}
+
+.inputStatus {
+  border: 1px solid #ced7e7;
+  border-radius: 8px;
+  width: 768px;
+  height: 50px;
+  margin: 16px;
+}
+.iconSpacing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+.icon {
+  padding-left: 12px;
+  padding-right: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(18, 21, 29, 0.6);
+}
+.iconText {
+  color: rgba(18, 21, 29, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  width: 79px;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.postButton {
+  background-color: #006cfa;
+  color: white;
+  margin-left: 462px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: transparent;
+  border-radius: 8px;
+  line-height: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
