@@ -1,13 +1,13 @@
 import React from "react";
 import { Card } from "./Card.js";
 
-export function Cards({ postData }) {
+export function Cards({ data }) {
 
   return (
   <>
-          {postData.map((onePost) => {
+          {data.map((oneUsersData) => {
             return (
-               <Card key={onePost.postId} onePost={onePost} />
+               <Card key={oneUsersData.id} oneUsersData={oneUsersData} />
              );
       })}
             </>

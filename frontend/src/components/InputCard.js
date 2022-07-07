@@ -4,8 +4,16 @@ import "./InputCard.css";
 export function InputCard() {
   const { media, setMedia } = useState();
   const { gettingMedia, setGettingMedia } = useState(false);
-  const { newPost, setNewPost } = useState()
+  const { newPost, setNewPost } = useState(JSON.parse(localStorage.getItem('new-post')) || 
+   { post: ''}
+  )
 
+  const handleNewPost = (e) => {
+    // localStorage.setItem('new-post', JSON.stringify(newPost));
+    // console.log(newPost);
+    setNewPost(e.target.value);
+    console.log(e.target.value);
+  }
 
   return (
     <div className="inputCard">
@@ -15,6 +23,7 @@ export function InputCard() {
           name="inputStatus"
           className="inputStatus"
           placeholder=" What's on your mind?"
+          onChange={(e)=>{setNewPost(e.target.value)}}
         />
         <div className="iconSpacing">
           { !gettingMedia ? (
@@ -65,7 +74,7 @@ export function InputCard() {
           </svg>
           <button className="iconText">Go Live</button>
 
-          <button type="submit" formmethod="post" name="submitPost" value="Post" className="postButton">Post</button>
+          <button type="submit" formmethod="post" name="submitPost" value="Post" className="postButton" onClick={handleNewPost}>Post</button>
         </div>
       </form>
     </div>
