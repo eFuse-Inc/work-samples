@@ -1,8 +1,12 @@
 # Background
 Every user at ForTheGamers has a profile that allows them to show off their professional highlights throughout the gaming industry. Each profile contains information about the user, their gaming interest, and their professional experience. Data points consist of **first name, gaming interest, last name, email, employer, job title**, and the **start date** they were employed (See Figure 1 for more). 
 
-![image](https://user-images.githubusercontent.com/20006215/177636137-9a4e7daa-035d-42ba-8246-5ff6a1ab1a56.png)
-Figure 1: User Profile
+<br>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/20006215/177636137-9a4e7daa-035d-42ba-8246-5ff6a1ab1a56.png" alt="Figure 1: User Profile" style="width:450px;height:500px;" />
+</p>
+
+<p align="center">Figure 1: User Profile</p>
 
 ## Constraints
 * Users can have more than one gaming interest
@@ -25,5 +29,21 @@ Now that the database is designed, we’ll work with engineering on creating opt
 ## Problem 3: Migration Plan
 Oop! The engineering team realized that they don’t have a way to track a users employment **end date**. Based on the tables you designed, 1) create a plan to migrate the new table design to account for the **end date** and 2) talk to how you’d migrate old data to the new design. See Figure 2 for the updated visual.
 
-![image](https://user-images.githubusercontent.com/20006215/177636593-5d27459a-3ff8-40f6-b6fc-7a8011e9ea07.png)
-Figure 2: Updated User Profile
+<br>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/20006215/177636593-5d27459a-3ff8-40f6-b6fc-7a8011e9ea07.png" alt="Figure 2: Updated User Profile" style="width:450px;height:500px;" />
+</p>
+
+<p align="center">Figure 2: Updated User Profile</p>
+
+## When You're Finished!
+- Email a zip file of your completed work with the convention:
+
+    `lastname_efuse-work-sample-dba.zip` to your recruiter.
+  - For Example: `quinn_efuse-work-sample-dba.zip`
+<br>
+
+The files to include in your zip:
+- dba.md (contains your responses)
+- [DIAGRAM NAME].png/.jpeg (your diagram from question 1)
+- any other files you need to include
