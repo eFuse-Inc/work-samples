@@ -1,5 +1,5 @@
 # Background
-Every user at ForTheGamers has a profile that allows them to show off their professional highlights throughout the gaming industry. Each profile contains information about the user, their gaming interest, and their professional experience. Data points consist of **first name, gaming interest, last name, email, employer, job title**, and the **start date** they were employed (See Figure 1 for more). 
+Every user at ForTheGamers has a profile that allows them to show off their professional highlights throughout the gaming industry. Each profile contains information about the user, their gaming interest, and their professional experience. Data points consist of **first name, gaming interest, last name, email, employer, job title**, and the **start date** they were employed (See Figure 1 for more).
 
 <br>
 <p align="center">
@@ -46,5 +46,9 @@ Oop! The engineering team realized that they don’t have a way to track a users
 
 The files to include in your zip:
 - dba.md (contains your responses)
+<<<<<<< Updated upstream
 - [DIAGRAM NAME].png/.jpeg (your diagram from question 1)
+=======
+- `DIAGRAM NAME`.png/.jpeg (your diagram from question 1)
+>>>>>>> Stashed changes
 - any other files you need to include
