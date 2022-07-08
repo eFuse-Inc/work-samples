@@ -3,7 +3,8 @@ Every user at ForTheGamers has a profile that allows them to show off their prof
 
 <br>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/20006215/177636137-9a4e7daa-035d-42ba-8246-5ff6a1ab1a56.png" alt="Figure 1: User Profile" style="width:450px;height:500px;" />
+  <img src="https://user-images.githubusercontent.com/23278343/178041946-455a6128-e7fd-4506-ba2e-1fad32053695.png" alt="Figure 1: User Profile" 
+       style="width:450px;height:500px;" />
 </p>
 
 <p align="center">Figure 1: User Profile</p>
@@ -31,7 +32,7 @@ Oop! The engineering team realized that they don’t have a way to track a users
 
 <br>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/20006215/177636593-5d27459a-3ff8-40f6-b6fc-7a8011e9ea07.png" alt="Figure 2: Updated User Profile" style="width:450px;height:500px;" />
+  <img src="https://user-images.githubusercontent.com/23278343/178042175-bc7b8d39-ba73-4517-aa92-121a5a5e1102.png" alt="Figure 2: Updated User Profile" style="width:450px;height:500px;" />
 </p>
 
 <p align="center">Figure 2: Updated User Profile</p>
