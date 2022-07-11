@@ -1,19 +1,45 @@
 .reactionsBar {
     display: flex;
-    /* border: 1px solid red; */
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 12px;
     width: 390px;
-    
 }
-
 .icon {
-    padding-left: 12px;
+    padding-top: 13px;
     padding-right: 8px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: rgba(18, 21, 29, 0.6);
+}
+.number {
+    font-size: 12px;
+    font-weight: 500;
+    color: #12151D;
+    line-height: 20px;
+
+}
+.words {
+    font-size: 10px;
+    font-weight: 400;
+    color: #12151D;
+    line-height: 16px;
+}
+.reactionsButton {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin-right: 5px;
+    color: #12151D;
+}
+
+.viewsNumber {
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #12151D;
+    line-height: 20px;
 }

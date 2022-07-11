@@ -1,13 +1,12 @@
 import React from "react";
 import { Card } from "./Card.js";
 
-export function Cards({ data }) {
-
+export function Cards({ setData, data }) {
   return (
   <>
-          {data.map((oneUsersData) => {
+          {data.users.map((oneUsersData) => {
             return (
-               <Card key={oneUsersData.id} oneUsersData={oneUsersData} />
+               <Card key={oneUsersData.id} setData={setData} oneUsersData={oneUsersData} />
              );
       })}
             </>

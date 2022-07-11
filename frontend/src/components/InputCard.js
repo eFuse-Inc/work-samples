@@ -56,8 +56,6 @@ export function InputCard() {
                 setMedia(e.target.files);
               }} />
           )}
-
-
           <svg
             className="icon"
             width="16"
@@ -74,7 +72,7 @@ export function InputCard() {
           </svg>
           <button className="iconText">Go Live</button>
 
-          <button type="submit" formmethod="post" name="submitPost" value="Post" className="postButton" onClick={handleNewPost}>Post</button>
+          <button type="submit" formMethod="post" name="submitPost" value="Post" className="postButton" onClick={handleNewPost}>Post</button>
         </div>
       </form>
     </div>

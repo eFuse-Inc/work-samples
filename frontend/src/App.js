@@ -1,30 +1,23 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import { Cards } from './components/cards/Cards.js';
-import axios from "axios";
 import { InputCard } from './components/InputCard.js';
-import useLocalStorage from "./hooks/useLocalStorage";
-
+import * as users from "./mockData/getPosts.json";
 
 function App() {
   const { data, setData } = useState()
-  
-  useEffect(() => {
-    axios
-      .get(
-        ""
-      )
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err));
-  }, []);
+  localStorage.setItem('users', JSON.stringify(users));
+  const theStoredUsers = JSON.parse(localStorage.getItem('users') || "[]")
+  // console.log('theStoredUsers', theStoredUsers);
 
-  // const postData = require("../src/mockData/getPosts.json");
-  // console.log(postData);
+  // useEffect(() => {
+  //   setData(theStoredUsers)
+  // }, []);
 
   return (
     <div className="App">
       <InputCard />
-          <Cards data={data}/>
+          <Cards setData={setData} data={theStoredUsers}/>
     </div>
   );
 }
