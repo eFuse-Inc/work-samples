@@ -1,39 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { ReactionBar } from "../ReactionBar.js";
 import { CommentBar } from "../CommentBar.js";
+import { MutliComments } from "../MutliComments.js";
 import "./Card.css";
 
+export function Card({ oneUsersData, setData }) {
+  const [ viewingComments, setViewingComments ] = useState(false);
+  
+  console.log(viewingComments)
 
-export function Card({ oneUsersData }) {
-  // const timeAgo = () => {
-  //   const hoursAgo = onePost.date.getHours();
-  //   console.log('hoursAgo', hoursAgo);
-  //   const minsAgo = onePost.date.getMinutes();
-  //   console.log('minsAgo', minsAgo);
-  //   const secondsAgo = onePost.date.getSeconds();
-  //   console.log('secondsAgo', secondsAgo);
-  //   const dateTime = new Date();
-  //   console.log(dateTime);
-
-  //   if (dateTime.getTime() > onePost.date.getTime()) {
-  //     if (dateTime.getHours() < hoursAgo) {
-  //       return hoursAgo;
-  //     }
-  //     if (dateTime.getMinutes() < minsAgo) {
-  //       return minsAgo;
-  //     }
-  //     if (dateTime.getSeconds() > secondsAgo) {
-  //       return secondsAgo;
-  //     }
-  //   } else {
-  //     return dateTime.getTime();
-  //   }
-  // }
   return (
     <div>
-                  {oneUsersData.posts.map((post) => {
+      {/* mapping through data to only show individual posts of this user */}
+          {oneUsersData.posts.map((post) => {
               return (
-                <div className="largeCard">
+                <div key={post.postId} className="largeCard">
                   <div className="tripleDot">
                     <svg
                       width="40"
@@ -51,7 +32,7 @@ export function Card({ oneUsersData }) {
                   </div>
 
                   <div className="invidualCard">
-                    <div key={post.postId} className="topOfCard">
+                    <div className="topOfCard">
                       <img
                         className="imgBubble"
                         src={oneUsersData.picURL}
@@ -64,8 +45,14 @@ export function Card({ oneUsersData }) {
                     </div>
                     <div className="post">
                       <p>{post.post}</p>
-                      <ReactionBar post={post} />
-                      <CommentBar />
+                      {/* passing setViewingComments so the cards state can show comments when clicked, passing post so the reactions data can show for the specific ID's post */}
+                      <ReactionBar
+                        setViewingComments={setViewingComments}
+                        viewingComments={viewingComments}
+                        post={post}
+                      />
+                      {viewingComments ? <MutliComments post={post} /> : <></>}
+                      <CommentBar setComment={setData} post={post} />
                     </div>
                   </div>
                 </div>

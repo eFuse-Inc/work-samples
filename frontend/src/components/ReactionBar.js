@@ -1,20 +1,20 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./ReactionBar.css";
 
 
-export function ReactionBar({ post }) {
-  const { comments, setComments } = useState(false);
-
-  const handleCommentsOnClick = () => {
-    setComments(true);
+export function ReactionBar({ setViewingComments, viewingComments, post }) {
+  // console.log('post on reactionBar', post.comments.length > 0);
+  const handleGetCommentsOnClick = (event) => {
+    event.preventDefault()
+      if (post.comments.length > 0) {
+        setViewingComments(!viewingComments);
+      }
   }
+  
   return (
     <>
       <div className="reactionsBar">
-        <button
-          className="reactionsButton"
-          type="submit"
-        >
+        <button className="reactionsButton" type="submit">
           <svg
             className="icon"
             width="12"
@@ -29,11 +29,13 @@ export function ReactionBar({ post }) {
               fillOpacity="0.6"
             />
           </svg>
-          <p className="number">{post.postHypeNo} <span className="words">Hypes</span></p>
+          <p className="number">
+            {post.postHypeNo} <span className="words">Hypes</span>
+          </p>
         </button>
         <button
           className="reactionsButton"
-          onClick={handleCommentsOnClick}
+          onClick={handleGetCommentsOnClick}
           type="submit"
         >
           <svg
@@ -50,13 +52,12 @@ export function ReactionBar({ post }) {
               fillOpacity="0.6"
             />
           </svg>
-          <p className="number">{post.noOfComments}<span className="words"> Comment(s)</span></p>
+          <p className="number">
+            {post.noOfComments}
+            <span className="words"> Comment(s)</span>
+          </p>
         </button>
-        <button
-          className="reactionsButton"
-          onClick={handleCommentsOnClick}
-          type="submit"
-        >
+        <button className="reactionsButton" type="submit">
           <svg
             className="icon"
             width="14"
@@ -71,9 +72,13 @@ export function ReactionBar({ post }) {
               fillOpacity="0.6"
             />
           </svg>
-          <p className="number">{post.postShareNo} <span className="words">Shares</span></p>
+          <p className="number">
+            {post.postShareNo} <span className="words">Shares</span>
+          </p>
         </button>
-        <p className="viewsNumber">{post.views} <span className="words">views</span></p>
+        <p className="viewsNumber">
+          {post.views} <span className="words">views</span>
+        </p>
       </div>
     </>
   );

@@ -6,13 +6,12 @@ import * as users from "./mockData/getPosts.json";
 
 function App() {
   const { data, setData } = useState()
-  localStorage.setItem('users', JSON.stringify(users));
+  useEffect(() => {
+    //setting the data in localStorage
+    localStorage.setItem("users", JSON.stringify(users));
+  }, [data])
+    //getting the set data to use through the application for state updates
   const theStoredUsers = JSON.parse(localStorage.getItem('users') || "[]")
-  // console.log('theStoredUsers', theStoredUsers);
-
-  // useEffect(() => {
-  //   setData(theStoredUsers)
-  // }, []);
 
   return (
     <div className="App">

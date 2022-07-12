@@ -1,13 +1,24 @@
 import React, { useState } from "react";
 import "./CommentBar.css";
 
-export function CommentBar() {
-  const { newComment, setNewComment } = useState('');
-  const { editing, setEditing } = useState(false);
-  const { submitted, setSubmitted } = useState(false);
+export function CommentBar({setComment, post}) {
+  // const { newComment, setNewComment } = useState('');
+  const [ editing, setEditing ] = useState(false);
+  const [ submitted, setSubmitted ] = useState(false);
 
   const handleOnChangeComment = (e) => {
-    return setNewComment(e.target.value);
+      let number = 0
+      while (number < post.comment.comments.length) {
+        number ++
+    }
+    const newComment = {
+      commentId: number,
+      date: new Date().toLocaleDateString(),
+      comment: e.target.value,
+    }
+    setComment((prevState) => ({
+      ...prevState, newComment
+    }))
   };
 
   const handleEditingOnClick = () => {
@@ -17,8 +28,6 @@ export function CommentBar() {
   const handleSubmittingOnClick = () => {
     setSubmitted(true)
   };
-
-  console.log("editing", editing);
 
   return (
     <div className="commentBar">
