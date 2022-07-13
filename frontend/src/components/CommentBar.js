@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "./CommentBar.css";
 
-export function CommentBar({setComment, post}) {
-  // const { newComment, setNewComment } = useState('');
+export function CommentBar({setData, post}) {
   const [ editing, setEditing ] = useState(false);
   const [ submitted, setSubmitted ] = useState(false);
 
   const handleOnChangeComment = (e) => {
       let number = 0
-      while (number < post.comment.comments.length) {
+      while (number < post.comments.comment.length) {
         number ++
     }
     const newComment = {
@@ -16,7 +15,7 @@ export function CommentBar({setComment, post}) {
       date: new Date().toLocaleDateString(),
       comment: e.target.value,
     }
-    setComment((prevState) => ({
+    setData((prevState) => ({
       ...prevState, newComment
     }))
   };
@@ -36,18 +35,8 @@ export function CommentBar({setComment, post}) {
           type="text"
           className="inputComment"
           onChange={handleOnChangeComment}
+          // placeHolder="Add comment"
         />
-        <button className="comment" onClick={handleEditingOnClick}>
-          <span class="material-symbols-outlined">chat_bubble</span>
-          <span> Add comment </span>
-          <button
-            className="plus"
-            type="submit"
-            onClick={handleSubmittingOnClick}
-          >
-            <span class="material-symbols-outlined">add_circle</span>{" "}
-          </button>
-        </button>
       </form>
     </div>
   );

@@ -4,17 +4,14 @@ import { CommentBar } from "../CommentBar.js";
 import { MutliComments } from "../MutliComments.js";
 import "./Card.css";
 
-export function Card({ oneUsersData, setData }) {
+export function Card({ data, post, setData}) {
   const [ viewingComments, setViewingComments ] = useState(false);
   
   console.log(viewingComments)
 
   return (
     <div>
-      {/* mapping through data to only show individual posts of this user */}
-          {oneUsersData.posts.map((post) => {
-              return (
-                <div key={post.postId} className="largeCard">
+                <div className="largeCard">
                   <div className="tripleDot">
                     <svg
                       width="40"
@@ -35,11 +32,11 @@ export function Card({ oneUsersData, setData }) {
                     <div className="topOfCard">
                       <img
                         className="imgBubble"
-                        src={oneUsersData.picURL}
+                        src={data.picURL}
                         alt="user"
                       />
                       <div className="headings">
-                        <p className="user">{oneUsersData.username}</p>
+                        <p className="user">{data.username}</p>
                         <p className="date">{post.postDate}</p>
                       </div>
                     </div>
@@ -51,13 +48,18 @@ export function Card({ oneUsersData, setData }) {
                         viewingComments={viewingComments}
                         post={post}
                       />
-                      {viewingComments ? <MutliComments post={post} /> : <></>}
-                      <CommentBar setComment={setData} post={post} />
+                      <CommentBar setData={setData} post={post} />
+
+                      {viewingComments ? (
+                        <MutliComments
+                          post={post}
+                        />
+                      ) : (
+                        <></>
+                      )}
                     </div>
                   </div>
                 </div>
-              );
-            })}
     </div>
   );
 }

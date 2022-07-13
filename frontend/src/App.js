@@ -2,21 +2,25 @@ import './App.css';
 import React, {useState, useEffect} from 'react';
 import { Cards } from './components/cards/Cards.js';
 import { InputCard } from './components/InputCard.js';
-import * as users from "./mockData/getPosts.json";
+import User from "./mockData/getPosts.json";
+
 
 function App() {
-  const { data, setData } = useState()
+  const [data, setData] = useState(User.user)
+  
   useEffect(() => {
+    //checking if user has been here, before.
+    console.log('users', User.user)
+    const prevSession = JSON.parse(localStorage.getItem('users'))
     //setting the data in localStorage
-    localStorage.setItem("users", JSON.stringify(users));
-  }, [data])
-    //getting the set data to use through the application for state updates
-  const theStoredUsers = JSON.parse(localStorage.getItem('users') || "[]")
+    prevSession ? setData(prevSession) : 
+      localStorage.setItem("users", JSON.stringify(User.user));
+  }, [])
 
   return (
     <div className="App">
-      <InputCard />
-          <Cards setData={setData} data={theStoredUsers}/>
+      <InputCard data={data} setData={setData} />
+      <Cards data={data} setData={setData} />
     </div>
   );
 }

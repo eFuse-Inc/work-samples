@@ -1,0 +1,14 @@
+.commentCard {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #CED7E7;
+    width: 740px;
+    padding: 16px;
+}
+
+.commentImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+

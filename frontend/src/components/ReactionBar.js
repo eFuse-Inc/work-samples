@@ -1,7 +1,6 @@
 import React from 'react';
 import "./ReactionBar.css";
 
-
 export function ReactionBar({ setViewingComments, viewingComments, post }) {
   // console.log('post on reactionBar', post.comments.length > 0);
   const handleGetCommentsOnClick = (event) => {

@@ -1,12 +1,15 @@
 import React from 'react';
 import {Comment} from "./Comment";
 
-export function MutliComments({ post }) {
-    console.log("post on MutliComments", post);
+export function MutliComments({ post, oneUsersData }) {
   return (
       <div>
-          {/* at post, there are comments on a post,  */}
-    <Comment post={post} />
+          
+          {post.comments.map((comment) => {
+             return (
+                  <Comment key={comment.id} comment={comment} />
+               ); 
+           })}
     </div>
   );
 }

@@ -1,32 +1,69 @@
 import React, { useState } from "react";
 import "./InputCard.css";
 
-export function InputCard() {
-  const { media, setMedia } = useState();
-  const { gettingMedia, setGettingMedia } = useState(false);
-  const { newPost, setNewPost } = useState(JSON.parse(localStorage.getItem('new-post')) || 
-   { post: ''}
-  )
+export function InputCard({ data, setData }) {
+  const [media, setMedia] = useState();
+  const [gettingMedia, setGettingMedia] = useState(false);
+  const [newPost, setNewPost] = useState('');
 
-  const handleNewPost = (e) => {
-    // localStorage.setItem('new-post', JSON.stringify(newPost));
-    // console.log(newPost);
+  const onChangePost = (e) => {
     setNewPost(e.target.value);
-    console.log(e.target.value);
   }
+
+  const formattedDate = () => {
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    let mm = today.getMonth() + 1; // Months start at 0!
+    let dd = today.getDate();
+
+    if (dd < 10) dd = "0" + dd;
+    if (mm < 10) mm = "0" + mm;
+
+    const formattedToday = dd + "/" + mm + "/" + yyyy;
+    return formattedToday;
+  }
+  const handleNewPost = (e) => {
+    e.preventDefault()
+    const idNumber = data.posts.length + 1;
+
+    const formattedPost = {
+      postId: idNumber,
+      post: newPost,
+      postDate: formattedDate(),
+      postHypeNo: 0,
+      postShareNo: 0,
+      noOfComments: 0,
+      views: 0,
+      hyped: false,
+      comments: []
+    }
+    setData({
+      ...data, posts: [formattedPost, ...data.posts]
+    })
+    localStorage.setItem(
+      "users",
+      JSON.stringify({
+        ...data,
+        posts: [formattedPost, ...data.posts],
+      })
+    );
+    setNewPost('');
+  }
+
 
   return (
     <div className="inputCard">
       <form className="form">
         <input
+          value={newPost}
           type="text"
           name="inputStatus"
           className="inputStatus"
           placeholder=" What's on your mind?"
-          onChange={(e)=>{setNewPost(e.target.value)}}
+          onChange={onChangePost}
         />
         <div className="iconSpacing">
-          { !gettingMedia ? (
+          {!gettingMedia ? (
             <>
               <svg
                 className="icon"
@@ -72,7 +109,7 @@ export function InputCard() {
           </svg>
           <button className="iconText">Go Live</button>
 
-          <button type="submit" formMethod="post" name="submitPost" value="Post" className="postButton" onClick={handleNewPost}>Post</button>
+          <button type="submit" formMethod="post" name="submitPost" value="Post" className="postButton" onClick={handleNewPost} >Post</button>
         </div>
       </form>
     </div>
