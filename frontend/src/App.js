@@ -1,7 +1,7 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
-import { Cards } from './components/cards/Cards.js';
-import { InputCard } from './components/InputCard.js';
+import { Posts } from './components/posts/Posts.js';
+import { PostInput } from './components/inputBars/PostInput.js';
 import User from "./mockData/getPosts.json";
 
 
@@ -10,7 +10,6 @@ function App() {
   
   useEffect(() => {
     //checking if user has been here, before.
-    console.log('users', User.user)
     const prevSession = JSON.parse(localStorage.getItem('users'))
     //setting the data in localStorage
     prevSession ? setData(prevSession) : 
@@ -19,8 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      <InputCard data={data} setData={setData} />
-      <Cards data={data} setData={setData} />
+      <PostInput data={data} setData={setData} />
+      <Posts data={data} setData={setData} />
     </div>
   );
 }

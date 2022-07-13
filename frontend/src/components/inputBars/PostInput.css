@@ -3,7 +3,7 @@
   border-radius: 10px;
   padding: 16px;
   width: 800px;
-  margin-left: 320px;
+  margin: 0 auto;
   margin-top: 38px;
   gap: 16px;
 }
@@ -47,7 +47,7 @@
   padding-right: 26px;
   padding-top: 12px;
   padding-bottom: 12px;
-  border: transparent;
+  border: none;
   border-radius: 8px;
   line-height: 15px;
   font-weight: 600;
