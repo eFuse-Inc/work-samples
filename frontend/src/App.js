@@ -2,6 +2,7 @@ import './App.css';
 import React, {useState, useEffect} from 'react';
 import { Posts } from './components/posts/Posts.js';
 import { PostInput } from './components/inputBars/PostInput.js';
+import { HeaderBar } from './components/header/HeaderBar.js';
 import User from "./mockData/getPosts.json";
 
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <HeaderBar/>
       <PostInput data={data} setData={setData} />
       <Posts data={data} setData={setData} />
     </div>

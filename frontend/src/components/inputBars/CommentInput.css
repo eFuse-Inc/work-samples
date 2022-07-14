@@ -44,3 +44,9 @@ button.material-icons-outlined {
     left: 722px;
     cursor: pointer;;
 }
+
+@media only screen and (max-width: 770px) {
+    .inputComment {
+        width:370px;
+    }
+}

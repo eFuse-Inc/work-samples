@@ -23,8 +23,8 @@ The objective is to implement a functioning feed similar to that of the eFuse lo
 * Can a user like and comment on a post?
 * Does the solution use some form of state management?
   * Local, context, Redux, etc.
-* Is the webpage responsive for web and mobile views?
-* Have tests been implemented?
+* Is the webpage responsive for web and mobile views? ******
+* Have tests been implemented? ****
 * Is the webpage hosted somewhere that can be viewed publicly?
   * Any hosting provider is fine.
 * Has the code been supplied for review?
