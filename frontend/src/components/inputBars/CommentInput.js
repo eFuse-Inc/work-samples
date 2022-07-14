@@ -64,7 +64,9 @@ export function CommentInput({ data, setData, setViewingComments, post }) {
   return (
     <div className="commentBar">
       <form onSubmit={handleNewComment}>
-        <span class="material-icons-outlined commentBubble">chat_bubble_outline</span>
+        <span class="material-icons-outlined commentBubble">
+          chat_bubble_outline
+        </span>
         <input
           type="text"
           className="inputComment"
@@ -72,7 +74,11 @@ export function CommentInput({ data, setData, setViewingComments, post }) {
           onChange={handleOnChangeComment}
           placeholder="Add comment"
         />
-        <button type="submit" class="material-icons-outlined">
+        <button
+          disabled={!newComment}
+          type="submit"
+          class="material-icons-outlined"
+        >
           add_circle_outline
         </button>
       </form>

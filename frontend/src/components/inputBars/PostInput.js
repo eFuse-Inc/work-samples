@@ -55,6 +55,7 @@ export function PostInput({ data, setData }) {
          Go Live</button>
 </div>
           <button
+            disabled={!newPost}
             type="submit"
             formMethod="post"
             name="submitPost"
