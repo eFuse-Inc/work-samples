@@ -17,6 +17,7 @@
     align-self: flex-end;
     margin-bottom: -60px;
     margin-top: -10px;
+    cursor: pointer;
 }
 .imgBubble {
     border-radius: 50%;
@@ -25,6 +26,7 @@
     margin-top: 30px;
     margin-right: 16px;
     border: transparent;
+    cursor: pointer;
 }
 .topOfCard {
     display: flex;
@@ -48,6 +50,7 @@
     font-weight: 500;
     color: #12151D;
     margin-bottom: 0px;
+    cursor: pointer;
 }
 .date {
     font-size: 12px;

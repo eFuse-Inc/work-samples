@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { ReactionBar } from "../reactions/ReactionBar.js";
 import { CommentInput } from "../inputBars/CommentInput.js";
 import { Comments } from "../comments/Comments.js";
@@ -6,7 +6,19 @@ import "./Post.css";
 
 export function Post({ data, post, setData}) {
   const [viewingComments, setViewingComments] = useState(false);
-  
+    const [isHyped, setIsHyped] = useState(false);
+
+
+    useEffect(() => {
+      setIsHyped(post.hyped);
+    }, [post.hyped]);
+
+    const hypedClass = isHyped ? "hyped" : "";
+
+    const onClickHype = () => {
+      setIsHyped(!isHyped);
+    };
+
   return (
     <div>
       <div className="largeCard">
@@ -41,14 +53,25 @@ export function Post({ data, post, setData}) {
               setViewingComments={setViewingComments}
               viewingComments={viewingComments}
               post={post}
+              hypedClass={hypedClass}
+              onClickHype={onClickHype}
             />
             <CommentInput
+              data={data}
               setData={setData}
               post={post}
               setViewingComments={setViewingComments}
             />
 
-            {viewingComments ? <Comments post={post} /> : <></>}
+            {viewingComments ? (
+              <Comments
+                hypedClass={hypedClass}
+                onClickHype={onClickHype}
+                post={post}
+              />
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>

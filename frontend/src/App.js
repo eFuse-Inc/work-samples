@@ -10,10 +10,10 @@ function App() {
   
   useEffect(() => {
     //checking if user has been here, before.
-    const prevSession = JSON.parse(localStorage.getItem('users'))
+    const prevSession = JSON.parse(localStorage.getItem('allInfo'))
     //setting the data in localStorage
     prevSession ? setData(prevSession) : 
-      localStorage.setItem("users", JSON.stringify(User.user));
+      localStorage.setItem("allInfo", JSON.stringify(User.user));
   }, [])
 
   return (

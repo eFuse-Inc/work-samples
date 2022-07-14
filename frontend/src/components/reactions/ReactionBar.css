@@ -1,23 +1,63 @@
 .reactionsBar {
     display: flex;
     flex-direction: row;
-    align-items: center;
     width: 390px;
+    border: none;
 }
 .icon {
-    padding-top: 13px;
-    padding-right: 8px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: rgba(18, 21, 29, 0.6);
 }
+
+.reactionsButton .icon {
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.hypesIcon:hover {
+    color: #F44900;
+    background-color: rgba(244, 73, 0, 0.3);
+}
+.hypesIcon:active {
+    color: rgba(255, 255, 255, 0.96);
+    background-color: #F44900;
+}
+.hypesIcon.hyped {
+    color: #F44900;
+    background-color: none;
+}
+
+.commentsIcon:hover {
+    background-color: rgba(0, 108, 250, 0.3);
+    color: #006CFA;
+}
+
+.commentsIcon:active {
+    background-color: #006CFA;;
+    color: white;
+}
+
+
+.sharesIcon:hover {
+    background-color: rgba(18, 21, 29, 0.3);
+    color: rgba(18, 21, 29, 0.87);
+}
+.sharesIcon:active {
+    background-color: rgba(18, 21, 29, 0.87);
+    color: #FFFFFF;
+}
+
 .number {
     font-size: 12px;
     font-weight: 500;
     color: #12151D;
     line-height: 20px;
-
 }
 .words {
     font-size: 10px;
@@ -28,12 +68,11 @@
 .reactionsButton {
     display: flex;
     flex-direction: row;
+    align-items: center;
     cursor: pointer;
     background-color: transparent;
-    border: none;
-    padding: 0px;
-    margin-right: 5px;
     color: #12151D;
+    border:none;
 }
 
 .viewsNumber {

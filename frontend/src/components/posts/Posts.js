@@ -2,7 +2,6 @@ import React from "react";
 import { Post } from "./Post.js"
 
 export function Posts({ setData, data }) {
-  console.log(data.posts);
   return (
     <>
       {/* mapping through data on localStorage to show one users data */}

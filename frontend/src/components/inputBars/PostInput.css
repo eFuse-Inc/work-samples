@@ -5,7 +5,6 @@
   width: 800px;
   margin: 0 auto;
   margin-top: 38px;
-  gap: 16px;
 }
 
 .inputStatus {
@@ -16,13 +15,19 @@
   margin: 16px;
 }
 .iconSpacing {
+  width: 768px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: baseline;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
 }
-.icon {
-  padding-left: 12px;
+.medias {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.photoIcon {
   padding-right: 8px;
   font-weight: 400;
   font-size: 14px;
@@ -34,15 +39,15 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  width: 79px;
   border: transparent;
   background-color: transparent;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 .postButton {
   background-color: #006cfa;
   color: white;
-  margin-left: 462px;
   padding-left: 26px;
   padding-right: 26px;
   padding-top: 12px;

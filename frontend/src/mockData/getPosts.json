@@ -13,10 +13,10 @@
           "postShareNo": 60,
           "noOfComments": 1,
           "views": 66,
-          "hyped": false,
+          "hyped": true,
           "comments": [
             {
-              "commentsId": 1,
+              "commentsId": 11,
               "date": "7/3/2022",
               "username": "wsherbrooke1",
               "picURL": "http://dummyimage.com/225x191.png/ff4444/ffffff",
@@ -39,7 +39,7 @@
           "hyped": false,
           "comments": [
             {
-              "commentsId": 1,
+              "commentsId": 21,
               "date": "6/19/2022",
               "username": "ospinas2",
               "picURL": "http://dummyimage.com/167x192.png/ff4444/ffffff",
@@ -62,8 +62,8 @@
           "hyped": false,
           "comments": [
             {
-              "commentsId": 1,
-              "date": "6/22/2022",
+              "commentsId": 32,
+              "date": "7/1/2022",
               "username": "rfilipovic3",
               "picURL": "http://dummyimage.com/192x166.png/5fa2dd/ffffff",
               "comment": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
@@ -73,8 +73,8 @@
               "hyped": false
             },
             {
-              "commentsId": 2,
-              "date": "7/1/2022",
+              "commentsId": 31,
+              "date": "6/22/2022",
               "username": "jdanes4",
               "picURL": "http://dummyimage.com/116x220.png/cc0000/ffffff",
               "comment": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",

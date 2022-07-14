@@ -1,50 +1,74 @@
 import React, { useState } from "react";
 import "./CommentInput.css";
 
-export function CommentInput({ setData, setViewingComments, post }) {
+export function CommentInput({ data, setData, setViewingComments, post }) {
   const [editing, setEditing] = useState(false);
   const [newComment, setNewComment] = useState("");
+  
+
 
   const handleOnChangeComment = (e) => {
     setNewComment(e.target.value);
   };
-  // console.log("before", post);
 
   const handleNewComment = (e) => {
     e.preventDefault();
-    const idNumber = post.comments.length + 1;
+
+      const idNumber = parseInt(
+        `${post.postId}${post.comments.length + 1}`,
+        10
+      );
+
+      //hard coding who is logged in
+      const myUsername = data.username;
+      const myUserPic = data.picURL;
 
     const formattedComment = {
-      commentId: idNumber,
+      commentsId: idNumber,
       date: new Date().toLocaleDateString(),
+      username: myUsername,
+      picURL: myUserPic,
       comment: newComment,
+      hypes: 0,
+      replies: 0,
+      shares: 0,
+      hyped: false,
     };
-    setData({
-      ...post,
-      comments: [formattedComment, ...post.comments],
-    });
+    const posts = data.posts;
+
+    const newPosts = posts.map((onePost) => {
+      return (
+        onePost.postId === post.postId ? { ...onePost, comments: [formattedComment, ...onePost.comments] } : onePost)
+    })
+    
     localStorage.setItem(
-      "users",
+      "allInfo",
       JSON.stringify({
-        ...post,
-        comments: [formattedComment, ...post.comments],
+        ...data,
+        posts: newPosts
       })
     );
+    setData({
+      ...data,
+      posts: newPosts,
+    });
+
     if (post.comments.length > 0) {
       setViewingComments(true);
     }
     setEditing(true);
     setNewComment("");
   };
-  // console.log("after", post);
+
 
   return (
     <div className="commentBar">
       <form onSubmit={handleNewComment}>
-        <span class="material-icons-outlined">chat_bubble_outline</span>
+        <span class="material-icons-outlined commentBubble">chat_bubble_outline</span>
         <input
           type="text"
           className="inputComment"
+          value={newComment}
           onChange={handleOnChangeComment}
           placeholder="Add comment"
         />
