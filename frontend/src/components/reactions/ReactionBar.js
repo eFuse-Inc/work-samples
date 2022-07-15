@@ -1,15 +1,16 @@
 import React from 'react';
 import "./ReactionBar.css";
 
-export function ReactionBar({ setViewingComments, viewingComments, post, onClickHype, hypedClass }) {
+export function ReactionBar({ setViewingComments, viewingComments, post, onClickHype, hypedClass, isHyped }) {
 
-  const handleGetCommentsOnClick = (event) => {
+  const handleGetComments = (event) => {
     event.preventDefault()
       if (post.comments.length > 0) {
         setViewingComments(!viewingComments);
       }
   }
   
+const addHype = post.postHypeNo + 1;
   return (
     <>
       <div className="reactionsBar">
@@ -18,12 +19,12 @@ export function ReactionBar({ setViewingComments, viewingComments, post, onClick
             water_drop
           </span>
           <p className="number">
-            {post.postHypeNo} <span className="words">Hypes</span>
+            {!isHyped ? post.postHypeNo : addHype} <span className="words">Hypes</span>
           </p>
         </button>
         <button
           className="reactionsButton"
-          onClick={handleGetCommentsOnClick}
+          onClick={handleGetComments}
           type="submit"
         >
           <span class="material-icons-outlined icon commentsIcon">

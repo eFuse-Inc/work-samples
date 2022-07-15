@@ -55,6 +55,7 @@ export function Post({ data, post, setData}) {
               post={post}
               hypedClass={hypedClass}
               onClickHype={onClickHype}
+              isHyped={isHyped}
             />
             <CommentInput
               data={data}
@@ -68,6 +69,7 @@ export function Post({ data, post, setData}) {
                 hypedClass={hypedClass}
                 onClickHype={onClickHype}
                 post={post}
+                isHyped={isHyped}
               />
             ) : (
               <></>

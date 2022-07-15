@@ -1,4 +1,4 @@
-.inputCard {
+.postInput {
   border: 1px solid #ced7e7;
   border-radius: 10px;
   padding: 16px;
@@ -64,13 +64,15 @@ cursor: auto;
 }
 
 @media only screen and (max-width: 770px) {
-  .inputCard {
-    width: 414px;
+  .postInput {
+    width: 382px;
+    padding: 10px;
+    margin-top: 18px;
   }
   .inputStatus {
-    width: 370px;
+    width: 350px;
   }
   .iconSpacing {
-   width: 370px;
+   width: 350px;
   }
 }

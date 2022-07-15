@@ -37,7 +37,7 @@ export function PostInput({ data, setData }) {
   }
 
   return (
-    <div className="inputCard">
+    <div className="postInput">
       <form className="form" onSubmit={handleNewPost}>
         <input
           value={newPost}

@@ -22,6 +22,8 @@ export function CommentInput({ data, setData, setViewingComments, post }) {
       //hard coding who is logged in
       const myUsername = data.username;
       const myUserPic = data.picURL;
+      
+    const addComment = post.noOfComments + 1;
 
     const formattedComment = {
       commentsId: idNumber,
@@ -38,14 +40,14 @@ export function CommentInput({ data, setData, setViewingComments, post }) {
 
     const newPosts = posts.map((onePost) => {
       return (
-        onePost.postId === post.postId ? { ...onePost, comments: [formattedComment, ...onePost.comments] } : onePost)
+        onePost.postId === post.postId ? { ...onePost, noOfComments: addComment, comments: [formattedComment, ...onePost.comments] } : onePost)
     })
     
     localStorage.setItem(
       "allInfo",
       JSON.stringify({
         ...data,
-        posts: newPosts
+        posts: newPosts,
       })
     );
     setData({

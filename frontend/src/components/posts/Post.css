@@ -67,6 +67,10 @@
 
 @media only screen and (max-width: 770px) {
     .largeCard {
-        width: 414px;
+        width: 400px;
+        padding: 22px;
+    }
+    .post {
+        width: 360px;
     }
 }
