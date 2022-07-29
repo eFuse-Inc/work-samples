@@ -28,7 +28,7 @@ Use any tool ([figma](https://www.figma.com/), [drawio](https://drawio-app.com/)
 Now that the database is designed, we’ll work with engineering on creating optimal queries for the backend API they’ve built (ORMs don’t do what we want so it’s vanilla SQL). Your task is this: write a query that pulls in all of the information for a single users profile (make sure the employer information is in descending order) with a user id of 17.
 
 ## Problem 3: Migration Plan
-Oop! The engineering team realized that they don’t have a way to track a users employment **end date**. Based on the tables you designed, 1) create a plan to migrate the new table design to account for the **end date** and 2) talk to how you’d migrate old data to the new design. See Figure 2 for the updated visual.
+Oop! The engineering team realized that they don’t have a way to track a users employment **end date**. Based on the tables you designed, 1) create a plan to migrate the new table design to account for the **end date** and 2) talk to how you’d migrate old data to the new design. See Figure 2 for the updated visual. 3) What query would be used to update the user table?
 
 <br>
 <p align="center">
