@@ -22,7 +22,7 @@ Every user at ForTheGamers has a profile that allows them to show off their prof
 **NOTE**: If you have any questions throughout this work sample, don’t hesitate to reach out!
 
 ## Problem 1: DB Design
-Use any tool ([figma](https://www.figma.com/), [drawio](https://drawio-app.com/), [lucidchart](https://www.lucidchart.com)) you want to create an EERD or UML diagram to model the database with the above background information and constraints (make sure you don’t violate any database constraints: insert, update, delete). Don’t forget, this is a relational model!
+Use <ins>any flow chart tool</ins> (ex. [figma](https://www.figma.com/), [drawio](https://drawio-app.com/), [lucidchart](https://www.lucidchart.com)) you want to create an EERD or UML diagram to model the database with the above background information and constraints (make sure you don’t violate any database constraints: insert, update, delete). Don’t forget, this is a relational model!
 
 ## Problem 2: Query Optimization
 Now that the database is designed, we’ll work with engineering on creating optimal queries for the backend API they’ve built (ORMs don’t do what we want so it’s vanilla SQL). Your task is this: write a query that pulls in all of the information for a single users profile (make sure the employer information is in descending order) with a user id of 17.
