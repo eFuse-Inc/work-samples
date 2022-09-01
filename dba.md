@@ -1,6 +1,6 @@
 # Overview
-Hello and welcome to your DBA worksample, If you have any questions, need more time, or want to check in, don't hesitate to do so. We want this experience to be great for you.
-
+Hello and welcome to your DBA work sample. If you have any questions, need more time, or want to check in, don't hesitate to do so. We want this experience to be great for you.
+## Prompt
 Every user at ForTheGamers has a profile that allows them to show off their professional highlights throughout the gaming industry. Each profile contains information about the user, their gaming interest, and their professional experience. Data points consist of **first name, gaming interest, last name, email, employer, job title**, and the **start date** they were employed (See Figure 1 for more).
 
 <br>
