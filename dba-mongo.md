@@ -51,7 +51,7 @@ Now that the database is designed, we’ll work with engineering on creating opt
 
 ## Problem 3: Ooops! Null Values
 
-Oop! For some strange reason, the gaming interest field for users contains null values. This is slowing down queries. Provide a detailed explanation of how you'll handled null values and, if any, what query you'll write to handle this.
+Oop! For some strange reason, the gaming interest field for users contains null values. This is slowing down queries. Provide a detailed explanation of how you'll handle null values and, if any, what query you'll write to handle this.
 
 ## When You're Finished!
 
